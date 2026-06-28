@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>荣小馆杭州大厦店点菜单</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="shell">
+<section class="menu-side">
+<div class="topbar">
+<div class="brand-row">
+<div class="brand"><h1>荣小馆杭州大厦店点菜单</h1><div class="sub">26-06-26 菜单整理版</div></div>
+<div class="totals-chip"><span>已选 <strong id="topCount">0</strong> 项</span><span>合计 <strong id="topTotal">¥0</strong></span></div>
+</div>
+<div class="toolbar"><input class="search" id="searchInput" type="search" placeholder="搜索菜名、规格或价格"><button class="ghost-button" id="showSelectedBtn" type="button">只看已选</button></div>
+<div class="category-strip" id="categoryStrip"></div>
+</div>
+<div id="menuList"></div>
+</section>
+<aside class="order-side">
+<div class="order-panel" id="orderPanel">
+<div class="order-head"><h2>已选菜品</h2><div class="small" id="orderMeta">0 项菜品</div></div>
+<div class="order-list" id="orderList"></div>
+<div class="summary">
+<div class="summary-row"><span>固定价格小计</span><strong id="fixedTotal">¥0</strong></div>
+<div class="summary-row"><span>时价未填</span><strong id="pendingCount">0 项</strong></div>
+<div class="grand"><span>合计</span><span class="amount" id="grandTotal">¥0</span></div>
+<div class="summary-buttons"><button class="solid-button" id="copyBtn" type="button">复制清单</button><button class="ghost-button" id="printBtn" type="button">打印</button><button class="ghost-button" id="clearBtn" type="button">清空</button><button class="ghost-button" id="saveBtn" type="button">保存选择</button></div>
+</div>
+</div>
+</aside>
+</main>
+<div class="mobile-cart-bar"><div class="mobile-cart-main"><div class="mobile-cart-total" id="mobileTotal">¥0</div><div class="mobile-cart-meta" id="mobileMeta">已选 0 项</div></div><button class="solid-button" id="mobileOrderBtn" type="button">查看已选</button></div>
+<div class="toast" id="toast"></div>
+<script src="menu-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
