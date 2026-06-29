@@ -3,9 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="build-version" content="2026-06-28-1909">
+<meta name="build-version" content="2026-06-29-font-size">
 <title>荣小馆杭州大厦店点菜单</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="font-size.css">
 </head>
 <body>
 <main class="shell">
@@ -15,7 +16,7 @@
 <div class="brand"><h1>荣小馆杭州大厦店点菜单</h1><div class="sub">26-06-26 菜单整理版</div></div>
 <div class="totals-chip"><span>已选 <strong id="topCount">0</strong> 项</span><span>合计 <strong id="topTotal">¥0</strong></span></div>
 </div>
-<div class="toolbar"><input class="search" id="searchInput" type="search" placeholder="搜索菜名、规格或价格"><button class="ghost-button" id="showSelectedBtn" type="button">只看已选</button></div>
+<div class="toolbar"><input class="search" id="searchInput" type="search" placeholder="搜索菜名、规格或价格"><div class="toolbar-actions"><div class="font-switch" role="group" aria-label="字号"><span>字号</span><button class="font-size-button" type="button" data-font-size="large" aria-pressed="true">大</button><button class="font-size-button" type="button" data-font-size="medium" aria-pressed="false">中</button><button class="font-size-button" type="button" data-font-size="small" aria-pressed="false">小</button></div><button class="ghost-button" id="showSelectedBtn" type="button">只看已选</button></div></div>
 <div class="category-strip" id="categoryStrip"></div>
 </div>
 <div id="menuList"></div>
@@ -37,5 +38,6 @@
 <div class="toast" id="toast"></div>
 <script src="menu-data.js"></script>
 <script src="app.js"></script>
+<script src="font-size.js"></script>
 </body>
 </html>
